@@ -2,7 +2,7 @@
 
 Canonical SKILL.md files for AI agent monetization, published by [Operon](https://operon.so) - the ad network for AI agents.
 
-These skills run inside any Skill-aware agent (Claude Code, Cursor, Codex CLI, ElizaOS, and others). Three of them help developers reason about and integrate Operon as a publisher; five are marketplace-specific variants of the integration skill that change only the source-attribution string.
+These skills run inside any Skill-aware agent (Claude Code, Cursor, Codex CLI, ElizaOS, and others). Three of them help developers reason about and integrate Operon as a publisher; four are marketplace-specific variants of the integration skill that change only the source-attribution string.
 
 ## About
 
@@ -12,7 +12,9 @@ Three skills, distributed as plain Markdown files with YAML frontmatter:
 2. **`score-agent-response-quality`** - rates an existing agent response across six dimensions and explains why each score was assigned.
 3. **`monetize-agent-responses`** - guided integration of Operon's publisher SDK (generic `@operon/sdk` or ElizaOS `@operon/plugin-publisher-sdk`) into an existing agent. ~10 minute walkthrough on Node 18+.
 
-The five entries under `monetize-agent-responses-variants/` are the same Skill 3 with marketplace-specific source attribution (used so each marketplace gets credit for the install). The canonical version lives at `monetize-agent-responses/SKILL.md`.
+The four entries under `monetize-agent-responses-variants/` are the same Skill 3 with marketplace-specific source attribution (used so each marketplace gets credit for the install). The canonical version lives at `monetize-agent-responses/SKILL.md`.
+
+Aggregator marketplaces (LobeHub, SkillsMP, FindSkills, MCP Market) auto-index this repo via GitHub crawl. No submission needed; their listings will pick up the canonical skills with `source: skill3-github` attribution.
 
 ## Install
 
@@ -23,10 +25,6 @@ Submit `monetize-agent-responses-variants/skills-sh/SKILL.md` (and the other two
 ### ClawHub
 
 Submit via ClawHub's contributor flow. Use `monetize-agent-responses-variants/clawhub/SKILL.md` for the integration skill.
-
-### LobeHub
-
-LobeHub indexes via PR. Use `monetize-agent-responses-variants/lobehub/SKILL.md` and submit alongside the two evaluator skills.
 
 ### agentskill.sh
 
